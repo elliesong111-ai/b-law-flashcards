@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Flashcards 学习系统首页</title>
+    <style>
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            background-color: white;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-size: 16px;
+            color: #555;
+        }
+        input, select {
+            margin-top: 5px;
+            padding: 8px;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>欢迎进入 Flashcards 学习系统</h1>
+        <form onsubmit="startLearning(event)">
+            <label for="role">请选择你的角色：</label>
+            <select id="role" required>
+                <option value="">--请选择--</option>
+                <option value="学生">学生</option>
+                <option value="教师">教师</option>
+                <option value="复习者">复习者</option>
+            </select>
+
+            <label for="name">请输入你的姓名：</label>
+            <input type="text" id="name" placeholder="例如：张三" required>
+
+            <button type="submit">开始学习</button>
+        </form>
+    </div>
+
+    <script>
+        function startLearning(event) {
+            event.preventDefault();
+            const role = document.getElementById('role').value;
+            const name = document.getElementById('name').value;
+            if (role && name) {
+                window.location.href = "index_flashcards.html";
+            }
+        }
+    </script>
+</body>
+</html>
