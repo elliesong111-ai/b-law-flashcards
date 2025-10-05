@@ -29,7 +29,7 @@
     <h1>Interactive Flashcards</h1>
     <div class="flashcards-container">
 
-        <div class="flashcard">
+        <div class="flashcard" onclick="this.querySelector('.card-inner').classList.toggle('flipped')" style="cursor: pointer;">
             <div class="card-inner">
                 <div class="card-front">
                     <h3>Q1</h3>
@@ -42,7 +42,7 @@
             </div>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" onclick="this.querySelector('.card-inner').classList.toggle('flipped')" style="cursor: pointer;">
             <div class="card-inner">
                 <div class="card-front">
                     <h3>Q2</h3>
@@ -55,7 +55,7 @@
             </div>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" onclick="this.querySelector('.card-inner').classList.toggle('flipped')" style="cursor: pointer;">
             <div class="card-inner">
                 <div class="card-front">
                     <h3>Q3</h3>
@@ -68,7 +68,7 @@
             </div>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" onclick="this.querySelector('.card-inner').classList.toggle('flipped')" style="cursor: pointer;">
             <div class="card-inner">
                 <div class="card-front">
                     <h3>Q4</h3>
@@ -81,7 +81,7 @@
             </div>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" onclick="this.querySelector('.card-inner').classList.toggle('flipped')" style="cursor: pointer;">
             <div class="card-inner">
                 <div class="card-front">
                     <h3>Q5</h3>
@@ -94,7 +94,7 @@
             </div>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" onclick="this.querySelector('.card-inner').classList.toggle('flipped')" style="cursor: pointer;">
             <div class="card-inner">
                 <div class="card-front">
                     <h3>Q6</h3>
@@ -107,7 +107,7 @@
             </div>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" onclick="this.querySelector('.card-inner').classList.toggle('flipped')" style="cursor: pointer;">
             <div class="card-inner">
                 <div class="card-front">
                     <h3>Q7</h3>
@@ -120,7 +120,7 @@
             </div>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" onclick="this.querySelector('.card-inner').classList.toggle('flipped')" style="cursor: pointer;">
             <div class="card-inner">
                 <div class="card-front">
                     <h3>Q8</h3>
@@ -133,7 +133,7 @@
             </div>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" onclick="this.querySelector('.card-inner').classList.toggle('flipped')" style="cursor: pointer;">
             <div class="card-inner">
                 <div class="card-front">
                     <h3>Q9</h3>
@@ -146,7 +146,7 @@
             </div>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" onclick="this.querySelector('.card-inner').classList.toggle('flipped')" style="cursor: pointer;">
             <div class="card-inner">
                 <div class="card-front">
                     <h3>Q10</h3>
@@ -159,7 +159,7 @@
             </div>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" onclick="this.querySelector('.card-inner').classList.toggle('flipped')" style="cursor: pointer;">
             <div class="card-inner">
                 <div class="card-front">
                     <h3>Q11</h3>
@@ -172,7 +172,7 @@
             </div>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" onclick="this.querySelector('.card-inner').classList.toggle('flipped')" style="cursor: pointer;">
             <div class="card-inner">
                 <div class="card-front">
                     <h3>Q12</h3>
@@ -185,7 +185,7 @@
             </div>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" onclick="this.querySelector('.card-inner').classList.toggle('flipped')" style="cursor: pointer;">
             <div class="card-inner">
                 <div class="card-front">
                     <h3>Q13</h3>
@@ -198,7 +198,7 @@
             </div>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" onclick="this.querySelector('.card-inner').classList.toggle('flipped')" style="cursor: pointer;">
             <div class="card-inner">
                 <div class="card-front">
                     <h3>Q14</h3>
@@ -211,7 +211,7 @@
             </div>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" onclick="this.querySelector('.card-inner').classList.toggle('flipped')" style="cursor: pointer;">
             <div class="card-inner">
                 <div class="card-front">
                     <h3>Q15</h3>
@@ -224,7 +224,7 @@
             </div>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" onclick="this.querySelector('.card-inner').classList.toggle('flipped')" style="cursor: pointer;">
             <div class="card-inner">
                 <div class="card-front">
                     <h3>Q16</h3>
@@ -239,21 +239,5 @@
     
     </div>
     
-    <script>
-        function toggleCard(card) {
-            const cardInner = card.querySelector('.card-inner');
-            cardInner.classList.toggle('flipped');
-        }
-        
-        // 为所有flashcard添加点击事件
-        document.addEventListener('DOMContentLoaded', function() {
-            const flashcards = document.querySelectorAll('.flashcard');
-            flashcards.forEach(card => {
-                card.addEventListener('click', function() {
-                    toggleCard(this);
-                });
-            });
-        });
-    </script>
 </body>
 </html>
