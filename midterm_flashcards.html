@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Interactive Flashcards</title>
+<style>
+body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
+.flashcard { background: #fff; border: 1px solid #ccc; border-radius: 8px; width: 300px; height: 200px; margin: 20px; perspective: 1000px; display: inline-block; vertical-align: top; }
+.inner { position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.8s; transform-style: preserve-3d; }
+/* 添加翻转状态的类 */
+.inner.flipped {
+    transform: rotateY(180deg);
+}
+
+/* 保留hover效果仅用于桌面端 */
+@media (hover: hover) {
+    .flashcard:hover .inner {
+        transform: rotateY(180deg);
+    }
+}
+.front, .back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; align-items: center; justify-content: center; padding: 20px; box-sizing: border-box; border-radius: 8px; }
+.front { background: #007BFF; color: white; font-weight: bold; }
+.back { background: #f8f9fa; color: #333; transform: rotateY(180deg); }
+</style>
+</head>
+<body>
+<h1>Midterm Exam Flashcards</h1>
+<div style="display: flex; flex-wrap: wrap;">
+
+    <div class="flashcard">
+        <div class="inner">
+            <div class="front">Gerald R. Ferrera • Mystica M. AlexanderCheryl Kirschner • William P. WigginsJonathan J. Darrow</div>
+            <div class="back">The Legal and Ethical
+Environment of Business
+An Integrated Approach
+Second Edition</div>
+        </div>
+    </div>
+    
+    <div class="flashcard">
+        <div class="inner">
+            <div class="front">Legal Aspects of the Global Business Environment</div>
+            <div class="back">Chapter 5</div>
+        </div>
+    </div>
+    
+    <div class="flashcard">
+        <div class="inner">
+            <div class="front">Sovereignty</div>
+            <div class="back">A sovereign state is self-governing and independent, and its authority is internationally recognized. A government has power to command control over the population and over a specific geographic region.
+Sovereign states typically have:
+Identifiable symbols like flags and a national anthem
+Some uniform law
+Common currency
+Postal system
+A defined population</div>
+        </div>
+    </div>
+    
+    <div class="flashcard">
+        <div class="inner">
+            <div class="front">Foreign Sovereign Immunities Act (FSIA)</div>
+            <div class="back">The Foreign Sovereign Immunities Act is a U.S. federal statute providing that a foreign government’s public sector acts fall outside the scope of a U.S. court’s jurisdiction.  It applies only when a foreign government is the defendant.
+Exceptions to the FSIA:
+The country waived its immunity.
+The country engaged in commercial activity.
+The country violated property rights in violation of international law.</div>
+        </div>
+    </div>
+    
+    <div class="flashcard">
+        <div class="inner">
+            <div class="front">Comity</div>
+            <div class="back">The doctrine of comity states that, in some circumstances, nations will recognize and defer to the legislative, executive, or judicial acts (including court decisions) of other countries.
+Comity requires that a U.S. court abstain from exercising jurisdiction over a dispute if a foreign court is in a better position to adjudicate it or if it is more appropriate to apply foreign law than U.S. law.
+U.S. courts recognize foreign judicial decisions as long as:
+The foreign court had jurisdiction;
+The foreign proceedings have been “orderly, fair and not detrimental to the nation’s interests” (Basic v. Fitzroy Engineering, Ltd. 949 F. Supp. 1333 (ND Ill 1996) aff’d 132 F. 3d 36 (7th Cir 1997); and 
+Recognizing the decision will not violate U.S. laws or U.S. public policy.</div>
+        </div>
+    </div>
+    
+    <div class="flashcard">
+        <div class="inner">
+            <div class="front">International Law Background</div>
+            <div class="back">Public international law refers to law that applies to the relationships between sovereign nations.  Private international law refers to law that applies to the resolution of disputes between private individuals and/or business entities.
+Sources of international law:
+International treaties and conventions
+Customary international law
+General principles of law
+Judicial decisions and scholarly teachings by international law experts</div>
+        </div>
+    </div>
+    
+    <div class="flashcard">
+        <div class="inner">
+            <div class="front">Treaties and Conventions</div>
+            <div class="back">A treaty is “an international agreement concluded between States in written form and governed by international law, whether embodied in a single instrument or in two or more related instruments.”
+Treaties can be bilateral or multilateral.
+Under U.S. law, the executive branch negotiates treaties.  The U.S. Senate provides advice and consent and ratifies it by two-thirds vote.  It is then signed by the president, at which point it is binding.</div>
+        </div>
+    </div>
+    
+    <div class="flashcard">
+        <div class="inner">
+            <div class="front">Some Risks of DoingBusiness Internationally</div>
+            <div class="back">Communication problems
+Cultural misunderstandings
+Transportation and delivery accidents
+Greater financial risk
+Potential of filing or defending a claim in a distant and unfamiliar legal system
+Harder to resolve disputes</div>
+        </div>
+    </div>
+    
+    <div class="flashcard">
+        <div class="inner">
+            <div class="front">Resolving InternationalBusiness Disputes</div>
+            <div class="back">Negotiation
+Mediation – voluntary, non-binding, private process in which a neutral third party facilitates a negotiated settlement between the parties
+Arbitration – neutral third party hears the dispute and issues a binding award  
+Litigation</div>
+        </div>
+    </div>
+    
+    <div class="flashcard">
+        <div class="inner">
+            <div class="front">Tariff and Non-TariffBarriers to Trade</div>
+            <div class="back">A tariff is a tax levied on imported goods.  Tariffs can be calculated as a percentage of the value of the imported goods, on the basis of the number or weight of the imported goods, by the unit, or a combination of these. 
+A non-tariff barrier is any type of restriction on imports other than tariffs.  For example, quotas are government-imposed restrictions on the number or value of goods that can be imported; and embargoes are government bans on trade with a particular country.</div>
+        </div>
+    </div>
+    
+    <div class="flashcard">
+        <div class="inner">
+            <div class="front">World Trade Organization (WTO) Principles</div>
+            <div class="back">The WTO is “the only global international organization dealing with the rules of trade between nations” (www.wto.org). 
+The WTO aims to liberalize trade by invoking these principles:
+Normal Trade Relations (NTR).  Each member must give equal trade privileges and benefits to all member nations in relation to the same imports.
+National Treatment.  Each member must apply the same standards to imports that are applied to domestic goods.
+Elimination of trade barriers.  Nontariff barriers are prohibited.</div>
+        </div>
+    </div>
+    
+    <div class="flashcard">
+        <div class="inner">
+            <div class="front">Dumping and Subsidies</div>
+            <div class="back">Dumping occurs when products of one country are introduced into the commerce of another country at less than the normal value of the product (GATT Article 6(1)).  The normal value of the product is the price charged for that product in the exporter’s home market.
+A subsidy is a financial contribution by a government that confers a benefit (Agreement on Subsidies and Countervailing Measures, section 1.1).
+A specific subsidy is a subsidy available only to a particular enterprise or industry.  Some specific subsidies are prohibited subsidies, which are automatically illegal, and some are actionable subsidies, which are illegal if the subsidy has an adverse effect on the complaining country.</div>
+        </div>
+    </div>
+    
+    <div class="flashcard">
+        <div class="inner">
+            <div class="front">United Nations (UN)</div>
+            <div class="back">The UN preamble states that its founders wanted “to save succeeding generations from the scourge of war,” and the charter authorizes “collective measures for the prevention and removal of threats to peace, and for the suppression of acts of aggression or other breaches of the peace.”
+The UN is comprised of five active bodies:  the General Assembly, Security Council, Secretariat, International Court of Justice, and Economic and Social Council.</div>
+        </div>
+    </div>
+    
+    <div class="flashcard">
+        <div class="inner">
+            <div class="front">International Court of Justice</div>
+            <div class="back">Operates as the judicial branch of the UN
+Resolves disputes only between member states (not between private parties)
+Jurisdiction voluntary
+Renders advisory opinions on legal questions submitted by the UN General Assembly, Security Council, or UN agencies</div>
+        </div>
+    </div>
+    
+    <div class="flashcard">
+        <div class="inner">
+            <div class="front">United Nations Commission on International Trade Law (UNCITRAL)</div>
+            <div class="back">UNCITRAL helps modernize and harmonize international trade law and standardize commercial practices and agreements.  UNCITRAL facilitated the Convention on Contracts for the International Sale of Goods (CISG).</div>
+        </div>
+    </div>
+    
+    <div class="flashcard">
+        <div class="inner">
+            <div class="front">World Intellectual Property Organization (WIPO)</div>
+            <div class="back">The mission of the World Intellectual Property Organization (WIPO) is “to promote innovation and creativity for the economic, social and cultural development of all countries, through a balanced and effective international intellectual property system” (www.wipo.org).
+Some of WIPO’s responsibilities are:
+Arbitrate disputes relating to patents, trademarks, copyrights and internet domain names
+Administer intellectual property treaties and conventions
+Administer systems and build networks to facilitate sharing knowledge, transferring technology, and simplifying intellectual property transactions</div>
+        </div>
+    </div>
+    
+    </div>
+    
+    <script>
+        function toggleCard(card) {
+            const cardInner = card.querySelector('.inner');
+            cardInner.classList.toggle('flipped');
+        }
+        
+        // 为所有flashcard添加点击事件
+        document.addEventListener('DOMContentLoaded', function() {
+            const flashcards = document.querySelectorAll('.flashcard');
+            flashcards.forEach(card => {
+                card.addEventListener('click', function() {
+                    toggleCard(this);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
